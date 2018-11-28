@@ -1,11 +1,3 @@
-# TODO: - Abfangen von leeren Eingaben (Typ None)
-#       - Programmfenster benennen
-#       - Aufbereiten der Grafik yeet
-#           - Vektoren nebeneinander, nicht untereinander yeet
-#           - Begrenzung Länge der Labels, yeetssssssss
-#           - Einfügen von Vektorklammern, = und x Zeichen yeet
-#       - Aufräumen des Codes/Feedback von anderen
-
 from tkinter import Tk, Label, Entry, Button, mainloop, messagebox
 from PIL import Image, ImageTk
 
@@ -79,8 +71,8 @@ Button(root, text="Calculate!", command=vectorProduct).grid(row=1, column=11)
 
 for i in range(1,4):
     # Erstellung Labels für n1-3 ERGEBNISSE
-    exec("label" + str(i) + " = Label(root, width=3)")
+    exec("label" + str(i) + " = Label(root, width=3, borderwidth=2, relief='groove')")
     exec("label" + str(i) + ".grid(row=i-1, column=9)")
 
-# Loop der das Windows zeichner
+# Loop der das Windows zeichnet
 mainloop()
